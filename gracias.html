@@ -1,0 +1,151 @@
+<html lang="es">
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WRWHNJRH');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="La Mordida - Repostería artesanal: tortas, cupcakes, alfajores y más." />
+  <title>La Mordida | Repostería artesanal</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRWHNJRH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content reveal">
+
+        <h1 class="hero__title">Gracias por tu <span>Compra</span>.</h1>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="index.html">
+            Ir a Inicio <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a class="btn btn--ghost" href="https://wa.me/51987272246" target="_blank" rel="noopener">
+            Ir a WhatsApp <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+
+        <div class="hero__badges">
+          <div class="badge">
+            <i class="fa-solid fa-star"></i>
+            <div><strong>5.0</strong><span>Recomendado</span></div>
+          </div>
+          <div class="badge">
+            <i class="fa-solid fa-cake-candles"></i>
+            <div><strong>Pedidos</strong><span>Personalizados</span></div>
+          </div>
+          <div class="badge">
+            <i class="fa-solid fa-truck"></i>
+            <div><strong>Entrega</strong><span>Coordinada</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CAMBIO: portada.png (sin blur) -->
+      <div class="hero__media reveal" aria-hidden="true">
+        <img class="hero__img hero__img--cover" src="img/portada.webp" alt="Portada La Mordida" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="footer__brand">
+          <img class="footer__logo" src="img/logo.webp" alt="Logo La Mordida" />
+          <div>
+            <strong>La Mordida</strong>
+            <div class="muted">Repostería artesanal</div>
+          </div>
+        </div>
+        <p class="muted">Tortas, postres y detalles dulces para momentos inolvidables.</p>
+      </div>
+
+      <div>
+        <strong>Secciones</strong>
+        <ul class="footer__links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <strong>Redes</strong>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/lamordida21?igsh=OGJhcjNiaDRodmZy" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61587645778826" target="_blank" rel="noopener" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> La Mordida. Todos los derechos reservados.</span>
+    </div>
+
+    <!-- Botón flotante WhatsApp rosado -->
+    <a class="floatWpp" href="https://wa.me/51987272246" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <span class="floatWpp__glow"></span>
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </footer>
+
+  <!-- DRAWER CARRITO -->
+  <aside class="cart" id="cartDrawer" aria-hidden="true">
+    <div class="cart__overlay" id="closeCartOverlay"></div>
+
+    <div class="cart__panel" role="dialog" aria-label="Carrito de compras">
+      <div class="cart__head">
+        <h3>Tu carrito</h3>
+        <button class="cart__close" id="closeCart" aria-label="Cerrar carrito">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="cart__items" id="cartItems"></div>
+
+      <div class="cart__foot">
+        <div class="cart__total">
+          <span>Total</span>
+          <strong id="cartTotal">S/ 0</strong>
+        </div>
+
+        <button class="btn btn--primary cart__send" id="sendOrder">
+          Comprar <i class="fa-brands fa-whatsapp"></i>
+        </button>
+
+        <button class="btn btn--ghost cart__clear" id="clearCart">
+          Vaciar carrito
+        </button>
+
+        <p class="cart__note">Se abrirá WhatsApp con el pedido listo para enviar.</p>
+      </div>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
